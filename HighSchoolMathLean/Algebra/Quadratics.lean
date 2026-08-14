@@ -37,10 +37,18 @@ theorem discriminant_real_root_classification (q : QuadraticEquation) :
     constructor
     · intro hx
       unfold QuadraticEquation.IsRoot at hx
-      nlinarith
+      have hzero : (2 * q.a * x + q.b) ^ 2 - q.discriminant = 0 := by
+        calc
+          (2 * q.a * x + q.b) ^ 2 - q.discriminant =
+              4 * q.a * (q.a * x ^ 2 + q.b * x + q.c) := hid
+          _ = 0 := by rw [hx]; ring
+      exact sub_eq_zero.mp hzero
     · intro hsquare
       have hproduct : (4 * q.a) * (q.a * x ^ 2 + q.b * x + q.c) = 0 := by
-        nlinarith
+        calc
+          (4 * q.a) * (q.a * x ^ 2 + q.b * x + q.c) =
+              (2 * q.a * x + q.b) ^ 2 - q.discriminant := hid.symm
+          _ = 0 := sub_eq_zero.mpr hsquare
       have hcoefficient : (4 : ℝ) * q.a ≠ 0 :=
         mul_ne_zero (by norm_num) q.leading_ne_zero
       have hpolynomial : q.a * x ^ 2 + q.b * x + q.c = 0 :=
@@ -64,11 +72,11 @@ theorem discriminant_real_root_classification (q : QuadraticEquation) :
       have hlinear₁ : 2 * q.a * x₁ + q.b = -s := by
         dsimp [x₁]
         field_simp [htwo_a]
-        ring
+        ring_nf
       have hlinear₂ : 2 * q.a * x₂ + q.b = s := by
         dsimp [x₂]
         field_simp [htwo_a]
-        ring
+        ring_nf
       refine ⟨x₁, x₂, ?_, (hroot_square x₁).2 ?_, (hroot_square x₂).2 ?_⟩
       · intro heq
         have hsame := congrArg (fun x : ℝ => 2 * q.a * x + q.b) heq
