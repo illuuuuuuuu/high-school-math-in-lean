@@ -10,8 +10,10 @@
 | Logic: basic equivalences | 3 |
 | Algebra: equality and order basics | 5 |
 | Algebra: strict inequalities | 8 |
-| Algebra: elementary means | 2 |
-| **Total** | **42** |
+| Algebra: elementary means | 4 |
+| Algebra: mean and absolute-value inequalities | 6 |
+| Algebra: quadratic equations | 2 |
+| **Total** | **52** |
 
 ## Acceptance criteria
 
