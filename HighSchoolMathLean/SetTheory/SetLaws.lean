@@ -101,4 +101,14 @@ theorem complement_union_univ {α : Type*} (A : Set α) : Aᶜ ∪ A = Set.univ 
   ext x
   simp
 
+/-- A set and its complement have empty intersection. -/
+theorem inter_complement_empty {α : Type*} (A : Set α) : A ∩ Aᶜ = ∅ := by
+  ext x
+  simp
+
+/-- A complement and its original set have empty intersection. -/
+theorem complement_inter_empty {α : Type*} (A : Set α) : Aᶜ ∩ A = ∅ := by
+  ext x
+  simp
+
 end HighSchoolMathLean.SetTheory
