@@ -5,8 +5,9 @@
 | Module | Verified declarations |
 |---|---:|
 | Set theory: basic relations | 10 |
+| Set theory: lattice and complement laws | 10 |
 | Set theory: relative complements | 2 |
-| **Total** | **12** |
+| **Total** | **22** |
 
 ## Acceptance criteria
 
