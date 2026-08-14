@@ -5,9 +5,11 @@
 | Module | Verified declarations |
 |---|---:|
 | Set theory: basic relations | 10 |
-| Set theory: lattice and complement laws | 10 |
+| Set theory: lattice and complement laws | 12 |
 | Set theory: relative complements | 2 |
-| **Total** | **22** |
+| Logic: basic equivalences | 3 |
+| Algebra: equality and order basics | 5 |
+| **Total** | **32** |
 
 ## Acceptance criteria
 
