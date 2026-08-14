@@ -8,7 +8,7 @@ import Mathlib.Tactic
 namespace HighSchoolMathLean.Algebra
 
 /-- Dividing equal real numbers by the same nonzero number preserves equality. -/
-theorem real_div_preserves_equality {a b c : ℝ} (h : a = b) (hc : c ≠ 0) :
+theorem real_div_preserves_equality {a b c : ℝ} (h : a = b) (_hc : c ≠ 0) :
     a / c = b / c := by
   subst b
   rfl
