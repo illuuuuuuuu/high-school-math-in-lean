@@ -12,8 +12,9 @@
 | Algebra: strict inequalities | 8 |
 | Algebra: elementary means | 4 |
 | Algebra: mean and absolute-value inequalities | 6 |
-| Algebra: quadratic equations | 2 |
-| **Total** | **52** |
+| Algebra: quadratic equations and inequalities | 11 |
+| Functions: explicit rules | 1 |
+| **Total** | **62** |
 
 ## Acceptance criteria
 
