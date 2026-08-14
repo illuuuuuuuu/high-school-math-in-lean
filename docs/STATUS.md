@@ -14,7 +14,8 @@
 | Algebra: mean and absolute-value inequalities | 6 |
 | Algebra: quadratic equations and inequalities | 11 |
 | Functions: rules, correspondence, and expressions | 11 |
-| **Total** | **72** |
+| Functions: representations and basic properties | 10 |
+| **Total** | **82** |
 
 ## Acceptance criteria
 
