@@ -181,6 +181,17 @@ theorem vieta_for_real_roots (q : QuadraticEquation) (α β : ℝ)
       nlinarith
   · unfold QuadraticEquation.discriminant at hdisc
     have hlinear : 2 * q.a * α + q.b = 0 := by
+      have hid : (2 * q.a * α + q.b) ^ 2 -
+          (q.b ^ 2 - 4 * q.a * q.c) =
+            4 * q.a * (q.a * α ^ 2 + q.b * α + q.c) := by
+        ring
+      have hzero : (2 * q.a * α + q.b) ^ 2 -
+          (q.b ^ 2 - 4 * q.a * q.c) = 0 := by
+        calc
+          _ = 4 * q.a * (q.a * α ^ 2 + q.b * α + q.c) := hid
+          _ = 0 := by rw [hα]; ring
+      have hsquare : (2 * q.a * α + q.b) ^ 2 = 0 := by
+        nlinarith
       nlinarith [sq_nonneg (2 * q.a * α + q.b)]
     have hsum_factor : q.a * (α + β) + q.b = 0 := by
       have hab : α = β := by
