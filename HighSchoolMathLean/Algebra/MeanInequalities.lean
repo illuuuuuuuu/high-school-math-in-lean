@@ -92,6 +92,7 @@ theorem geometric_mean_ge_harmonic_mean {a b : ℝ} (ha : a > 0) (hb : b > 0) :
         nlinarith [Real.sq_sqrt (mul_nonneg ha.le ha.le), Real.sqrt_nonneg (a * a)]
       rw [hs]
       field_simp [ha.ne']
+      norm_num
 
 /-- The four elementary means of two positive real numbers form the standard chain,
 and all adjacent equalities hold exactly when the numbers are equal. -/
