@@ -324,11 +324,12 @@ theorem positive_quadratic_zero_discriminant_solution_set (a b c : ℝ) (ha : a 
       nlinarith
   · intro hsets
     have hvertex_membership := Set.ext_iff.mp hsets (-b / (2 * a))
-    simp only [Set.mem_setOf_eq, ne_eq] at hvertex_membership
     have hvertex_not_positive : ¬(a * (-b / (2 * a)) ^ 2 +
         b * (-b / (2 * a)) + c > 0) := by
       intro hpositive
-      exact (hvertex_membership.mp hpositive) rfl
+      have hnot_self : (-b / (2 * a) : ℝ) ≠ -b / (2 * a) := by
+        exact hvertex_membership.mp hpositive
+      exact hnot_self rfl
     have hdisc_nonneg : 0 ≤ b ^ 2 - 4 * a * c := by
       have := hidentity (-b / (2 * a))
       nlinarith
@@ -407,9 +408,12 @@ theorem positive_quadratic_two_root_solution_set (a b c x₁ x₂ : ℝ)
         nlinarith
     · rintro (hleft | hright)
       · have hx₂ : x < x₂ := lt_trans hleft horder
-        exact mul_pos ha (mul_pos_of_neg_of_neg (sub_neg.mpr hleft) (sub_neg.mpr hx₂))
+        have hfirst_neg : a * (x - x₁) < 0 :=
+          mul_neg_of_pos_of_neg ha (sub_neg.mpr hleft)
+        exact mul_pos_of_neg_of_neg hfirst_neg (sub_neg.mpr hx₂)
       · have hx₁ : x₁ < x := lt_trans horder hright
-        exact mul_pos ha (mul_pos (sub_pos.mpr hx₁) (sub_pos.mpr hright))
+        have hfirst_pos : 0 < a * (x - x₁) := mul_pos ha (sub_pos.mpr hx₁)
+        exact mul_pos hfirst_pos (sub_pos.mpr hright)
   exact ⟨fun _ => hsolution, fun _ => hdisc⟩
 
 /-- For a positive leading coefficient, negative discriminant is equivalent to
