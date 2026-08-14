@@ -4,7 +4,9 @@
 
 | Module | Verified declarations |
 |---|---:|
+| Set theory: basic relations | 10 |
 | Set theory: relative complements | 2 |
+| **Total** | **12** |
 
 ## Acceptance criteria
 
