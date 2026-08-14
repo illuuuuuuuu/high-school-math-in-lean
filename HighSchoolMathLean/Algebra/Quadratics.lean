@@ -70,16 +70,19 @@ theorem discriminant_real_root_classification (q : QuadraticEquation) :
       have htwo_a : (2 : ℝ) * q.a ≠ 0 :=
         mul_ne_zero (by norm_num) q.leading_ne_zero
       have hlinear₁ : 2 * q.a * x₁ + q.b = -s := by
-        dsimp [x₁]
-        field_simp [htwo_a]
-        ring_nf
+        have hmul : x₁ * (2 * q.a) = -q.b - s := by
+          dsimp [x₁]
+          field_simp [q.leading_ne_zero]
+        nlinarith
       have hlinear₂ : 2 * q.a * x₂ + q.b = s := by
-        dsimp [x₂]
-        field_simp [htwo_a]
-        ring_nf
+        have hmul : x₂ * (2 * q.a) = -q.b + s := by
+          dsimp [x₂]
+          field_simp [q.leading_ne_zero]
+        nlinarith
       refine ⟨x₁, x₂, ?_, (hroot_square x₁).2 ?_, (hroot_square x₂).2 ?_⟩
       · intro heq
         have hsame := congrArg (fun x : ℝ => 2 * q.a * x + q.b) heq
+        change 2 * q.a * x₁ + q.b = 2 * q.a * x₂ + q.b at hsame
         rw [hlinear₁, hlinear₂] at hsame
         nlinarith
       · rw [hlinear₁]
