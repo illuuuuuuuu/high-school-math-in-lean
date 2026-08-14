@@ -1,0 +1,38 @@
+# High School Mathematics in Lean
+
+A Lean 4 library for formally verified elementary mathematics.
+
+## Author
+
+Illusix Liu
+
+## Goals
+
+- express mathematical statements with explicit types and assumptions;
+- reuse standard definitions and results from Mathlib;
+- provide complete proofs checked by the Lean kernel;
+- organize material as a conventional Lean library;
+- keep every verified declaration free of `sorry` and unsupported axioms.
+
+## Current contents
+
+The library currently begins with foundational identities for sets. Additional modules will cover algebra, functions, trigonometry, vectors, sequences, complex numbers, geometry, statistics, and probability.
+
+## Build
+
+Install Lean through `elan`, then run:
+
+```bash
+lake update
+lake build
+```
+
+The Lean and Mathlib revisions are pinned by `lean-toolchain` and `lakefile.toml`.
+
+## Repository contents
+
+This repository contains original Lean source code and project documentation. No external textbook, source manuscript, image collection, or typesetting project is included.
+
+## Copyright
+
+Copyright © 2026 Illusix Liu. All rights reserved. See [COPYRIGHT.md](COPYRIGHT.md).
