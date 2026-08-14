@@ -14,4 +14,12 @@ noncomputable def arithmeticMean (a b : ℝ) : ℝ :=
 noncomputable def geometricMean (a b : ℝ) : ℝ :=
   Real.sqrt (a * b)
 
+/-- The harmonic mean of two real numbers. -/
+noncomputable def harmonicMean (a b : ℝ) : ℝ :=
+  2 / (1 / a + 1 / b)
+
+/-- The quadratic mean of two real numbers. -/
+noncomputable def quadraticMean (a b : ℝ) : ℝ :=
+  Real.sqrt ((a ^ 2 + b ^ 2) / 2)
+
 end HighSchoolMathLean.Algebra
