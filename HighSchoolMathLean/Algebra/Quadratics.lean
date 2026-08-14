@@ -328,7 +328,7 @@ theorem positive_quadratic_zero_discriminant_solution_set (a b c : ℝ) (ha : a 
     have hvertex_not_positive : ¬(a * (-b / (2 * a)) ^ 2 +
         b * (-b / (2 * a)) + c > 0) := by
       intro hpositive
-      exact hvertex_membership.mp hpositive rfl
+      exact (hvertex_membership.mp hpositive) rfl
     have hdisc_nonneg : 0 ≤ b ^ 2 - 4 * a * c := by
       have := hidentity (-b / (2 * a))
       nlinarith
