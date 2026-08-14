@@ -114,9 +114,10 @@ theorem discriminant_real_root_classification (q : QuadraticEquation) :
       have htwo_a : (2 : ℝ) * q.a ≠ 0 :=
         mul_ne_zero (by norm_num) q.leading_ne_zero
       have hlinear₀ : 2 * q.a * x₀ + q.b = 0 := by
-        dsimp [x₀]
-        field_simp [htwo_a]
-        ring
+        have hmul : x₀ * (2 * q.a) = -q.b := by
+          dsimp [x₀]
+          field_simp [q.leading_ne_zero]
+        nlinarith
       refine ⟨x₀, (hroot_square x₀).2 ?_, ?_⟩
       · rw [hlinear₀, hdisc]
         norm_num
@@ -168,7 +169,11 @@ theorem vieta_for_real_roots (q : QuadraticEquation) (α β : ℝ)
     have hsum_factor : q.a * (α + β) + q.b = 0 :=
       (mul_eq_zero.mp hdifference).resolve_left (sub_ne_zero.mpr hne)
     have hproduct_factor : q.a * (α * β) - q.c = 0 := by
-      nlinarith
+      have hb : q.b = -q.a * (α + β) := by nlinarith
+      calc
+        q.a * (α * β) - q.c =
+            -(q.a * α ^ 2 + q.b * α + q.c) := by rw [hb]; ring
+        _ = 0 := by rw [hα]; norm_num
     constructor
     · apply (eq_div_iff q.leading_ne_zero).2
       nlinarith
@@ -188,7 +193,11 @@ theorem vieta_for_real_roots (q : QuadraticEquation) (α β : ℝ)
       subst β
       nlinarith
     have hproduct_factor : q.a * (α * β) - q.c = 0 := by
-      nlinarith
+      have hb : q.b = -q.a * (α + β) := by nlinarith
+      calc
+        q.a * (α * β) - q.c =
+            -(q.a * α ^ 2 + q.b * α + q.c) := by rw [hb]; ring
+        _ = 0 := by rw [hα]; norm_num
     constructor
     · apply (eq_div_iff q.leading_ne_zero).2
       nlinarith
