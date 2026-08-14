@@ -200,7 +200,11 @@ theorem vieta_for_real_roots (q : QuadraticEquation) (α β : ℝ)
           nlinarith
         have hsum : q.a * (α + β) + q.b = 0 :=
           (mul_eq_zero.mp hdifference).resolve_left (sub_ne_zero.mpr hne)
-        nlinarith
+        have hproduct : q.a * (α - β) = 0 := by
+          nlinarith
+        have heq : α - β = 0 :=
+          (mul_eq_zero.mp hproduct).resolve_left q.leading_ne_zero
+        exact hne (sub_eq_zero.mp heq)
       subst β
       nlinarith
     have hproduct_factor : q.a * (α * β) - q.c = 0 := by
@@ -269,8 +273,10 @@ theorem monic_quadratic_root_identities (p q α β : ℝ)
   · ring
   · nlinarith
   · have hradicands_equal : (α + β) ^ 2 - 4 * α * β = p ^ 2 - 4 * q := by
-      rw [hsum, hproduct]
-      ring
+      calc
+        (α + β) ^ 2 - 4 * α * β = (α + β) ^ 2 - 4 * (α * β) := by ring
+        _ = (-p) ^ 2 - 4 * q := by rw [hsum, hproduct]
+        _ = p ^ 2 - 4 * q := by ring
     rw [← hradicands_equal]
     exact habs_sqrt
 
