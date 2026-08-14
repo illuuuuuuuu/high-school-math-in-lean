@@ -9,7 +9,9 @@
 | Set theory: relative complements | 2 |
 | Logic: basic equivalences | 3 |
 | Algebra: equality and order basics | 5 |
-| **Total** | **32** |
+| Algebra: strict inequalities | 8 |
+| Algebra: elementary means | 2 |
+| **Total** | **42** |
 
 ## Acceptance criteria
 
