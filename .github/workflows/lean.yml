@@ -10,14 +10,3 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: leanprover/lean-action@v1
-        with:
-          auto-config: false
-          build: false
-          test: false
-          use-github-cache: false
-      - name: Resolve dependencies
-        run: lake update
-      - name: Download Mathlib cache
-        run: lake exe cache get
-      - name: Build
-        run: lake build
