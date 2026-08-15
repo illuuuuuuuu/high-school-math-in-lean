@@ -15,7 +15,8 @@
 | Algebra: quadratic equations and inequalities | 11 |
 | Functions: rules, correspondence, and expressions | 11 |
 | Functions: representations and basic properties | 10 |
-| **Total** | **82** |
+| Functions: periodicity, power profiles, zeros, and roots | 10 |
+| **Total** | **92** |
 
 ## Acceptance criteria
 
