@@ -26,12 +26,12 @@ theorem nth_root_of_nth_power (a : ℝ) (n p : ℕ) :
       _ = a ^ n := by rw [hn]
 
 /-- The nonnegative-base interpretation of a positive fractional power. -/
-def positiveFractionalPower (a : ℝ) (m n : ℕ) : ℝ :=
+noncomputable def positiveFractionalPower (a : ℝ) (m n : ℕ) : ℝ :=
   Real.rpow a ((m : ℝ) / (n : ℝ))
 
 /-- A negative fractional power is the reciprocal of the corresponding
 positive fractional power. -/
-def negativeFractionalPower (a : ℝ) (m n : ℕ) : ℝ :=
+noncomputable def negativeFractionalPower (a : ℝ) (m n : ℕ) : ℝ :=
   (positiveFractionalPower a m n)⁻¹
 
 /-- Zero raised to a genuinely positive fractional exponent is zero. -/
