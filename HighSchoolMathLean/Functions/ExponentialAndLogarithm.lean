@@ -79,11 +79,11 @@ theorem no_logarithm_of_nonpositive {a N x : ℝ}
     ¬ IsLogarithm a N x := by
   intro h
   have hrpow : 0 < Real.rpow a x := Real.rpow_pos_of_pos ha x
-  rw [IsLogarithm, h] at hrpow
+  change Real.rpow a x = N at h
   linarith
 
 /-- The logarithm of the base is one, and the logarithm of one is zero. -/
-theorem logarithm_basic_properties (a : ℝ) (ha : 0 < a) (hane : a ≠ 1) :
+theorem logarithm_basic_properties (a : ℝ) (_ha : 0 < a) (_hane : a ≠ 1) :
     IsLogarithm a a 1 ∧ IsLogarithm a 1 0 := by
   constructor
   · simp [IsLogarithm]
