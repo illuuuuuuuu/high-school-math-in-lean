@@ -10,6 +10,7 @@ import HighSchoolMathLean.Algebra.Quadratics
 import HighSchoolMathLean.Functions.Rules
 import HighSchoolMathLean.Functions.Properties
 import HighSchoolMathLean.Functions.PeriodicityAndRoots
+import HighSchoolMathLean.Functions.FractionalPowers
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
