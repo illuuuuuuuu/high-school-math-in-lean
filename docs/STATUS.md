@@ -17,7 +17,9 @@
 | Functions: representations and basic properties | 10 |
 | Functions: periodicity, power profiles, zeros, and roots | 10 |
 | Functions: fractional and real power laws | 10 |
-| **Total** | **102** |
+| Functions: exponential and logarithm foundations | 10 |
+| Functions: logarithm properties and directed angles | 10 |
+| **Total** | **122** |
 
 ## Acceptance criteria
 
