@@ -28,7 +28,6 @@ theorem logarithm_change_of_base (a b c : ℝ)
   have hlc : Real.log c ≠ 0 := Real.log_ne_zero_of_pos_of_ne_one hc hcne
   unfold Real.logb
   field_simp [hla, hlc, div_ne_zero hla hlc]
-  <;> ring
 
 /-- A logarithm function has a valid base and agrees with `Real.logb` on the
 positive real numbers, its mathematical domain. -/
@@ -67,7 +66,9 @@ theorem logarithmFunction_range {f : ℝ → ℝ} {a : ℝ}
 theorem logarithmFunction_one {f : ℝ → ℝ} {a : ℝ}
     (hf : IsLogarithmFunction f a) :
     f 1 = 0 := by
-  rw [hf.2.2 1 zero_lt_one]
+  have h_one_pos : (1 : ℝ) ∈ Set.Ioi 0 := by
+    exact Set.mem_Ioi.mpr zero_lt_one
+  rw [hf.2.2 1 h_one_pos]
   simp [Real.logb]
 
 /-- Logarithm functions increase for bases greater than one and decrease for
