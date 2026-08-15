@@ -16,7 +16,8 @@
 | Functions: rules, correspondence, and expressions | 11 |
 | Functions: representations and basic properties | 10 |
 | Functions: periodicity, power profiles, zeros, and roots | 10 |
-| **Total** | **92** |
+| Functions: fractional and real power laws | 10 |
+| **Total** | **102** |
 
 ## Acceptance criteria
 
