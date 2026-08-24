@@ -27,7 +27,17 @@
 | Trigonometry: graph transformations and harmonic motion | 9 |
 | Plane vectors: foundations and geometric addition | 10 |
 | Plane vectors: algebraic operations and scalar multiplication | 10 |
-| **Total** | **202** |
+| Plane vectors: linear operations, direction, and angle | 10 |
+| **Total** | **212** |
+
+## Coverage summary
+
+| Coverage category | Statements |
+|---|---:|
+| Source statements processed | 247 |
+| New verified declarations in this repository | 212 |
+| Statements represented directly by Lean/Mathlib primitives | 35 |
+| **Total source coverage** | **247** |
 
 ## Acceptance criteria
 
