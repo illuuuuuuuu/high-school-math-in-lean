@@ -10,21 +10,22 @@ import Mathlib.Tactic
 namespace HighSchoolMathLean.Trigonometry
 
 /-- The real sine function. -/
-def sineFunction : ℝ → ℝ :=
+noncomputable def sineFunction : ℝ → ℝ :=
   Real.sin
 
 /-- The real cosine function. -/
-def cosineFunction : ℝ → ℝ :=
+noncomputable def cosineFunction : ℝ → ℝ :=
   Real.cos
 
 /-- The real tangent function. -/
-def tangentFunction : ℝ → ℝ :=
+noncomputable def tangentFunction : ℝ → ℝ :=
   Real.tan
 
 /-- The Pythagorean identity for sine and cosine. -/
 theorem sine_sq_add_cosine_sq (α : ℝ) :
     sineFunction α ^ 2 + cosineFunction α ^ 2 = 1 := by
-  simpa [sineFunction, cosineFunction] using Real.sin_sq_add_cos_sq α
+  change Real.sin α ^ 2 + Real.cos α ^ 2 = 1
+  exact Real.sin_sq_add_cos_sq α
 
 /-- Where cosine is nonzero, tangent is sine divided by cosine. -/
 theorem sine_div_cosine_eq_tangent (α : ℝ)
@@ -43,14 +44,14 @@ theorem sine_cosine_two_pi_periodicity (x : ℝ) :
 
 /-- The sine curve is continuous and smooth to every order. -/
 theorem sineCurve_continuous_and_smooth :
-    Continuous sineFunction ∧ ContDiff ℝ ∞ sineFunction := by
+    Continuous sineFunction ∧ ContDiff ℝ ⊤ sineFunction := by
   exact ⟨Real.continuous_sin, Real.contDiff_sin⟩
 
 /-- The cosine curve is a left shift of the sine curve by `π / 2`; it is also
 continuous and smooth to every order. -/
 theorem cosineCurve_shift_continuous_and_smooth :
     (∀ x : ℝ, cosineFunction x = sineFunction (x + Real.pi / 2)) ∧
-    Continuous cosineFunction ∧ ContDiff ℝ ∞ cosineFunction := by
+    Continuous cosineFunction ∧ ContDiff ℝ ⊤ cosineFunction := by
   refine ⟨?_, Real.continuous_cos, Real.contDiff_cos⟩
   intro x
   simpa [sineFunction, cosineFunction] using (Real.sin_add_pi_div_two x).symm
