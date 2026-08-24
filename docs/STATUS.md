@@ -28,16 +28,17 @@
 | Plane vectors: foundations and geometric addition | 10 |
 | Plane vectors: algebraic operations and scalar multiplication | 10 |
 | Plane vectors: linear operations, direction, and angle | 10 |
-| **Total** | **212** |
+| Plane vectors: inner products, projections, and bases | 10 |
+| **Total** | **222** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 247 |
-| New verified declarations in this repository | 212 |
+| Source statements processed | 257 |
+| New verified declarations in this repository | 222 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **247** |
+| **Total source coverage** | **257** |
 
 ## Acceptance criteria
 
