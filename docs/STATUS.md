@@ -25,7 +25,8 @@
 | Trigonometry: angle addition, double-angle, and half-angle identities | 10 |
 | Trigonometry: product-to-sum and half-angle substitutions | 11 |
 | Trigonometry: graph transformations and harmonic motion | 9 |
-| **Total** | **182** |
+| Plane vectors: foundations and geometric addition | 10 |
+| **Total** | **192** |
 
 ## Acceptance criteria
 
