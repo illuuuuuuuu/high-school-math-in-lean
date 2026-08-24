@@ -15,6 +15,8 @@ import HighSchoolMathLean.Functions.ExponentialAndLogarithm
 import HighSchoolMathLean.Functions.LogarithmPropertiesAndAngles
 import HighSchoolMathLean.Trigonometry.AnglesAndRadians
 import HighSchoolMathLean.Trigonometry.BasicFunctions
+import HighSchoolMathLean.Trigonometry.QualitativeProperties
+import HighSchoolMathLean.Trigonometry.AngleIdentities
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
