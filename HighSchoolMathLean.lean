@@ -23,6 +23,7 @@ import HighSchoolMathLean.PlaneVectors.Basic
 import HighSchoolMathLean.PlaneVectors.AdditionGeometry
 import HighSchoolMathLean.PlaneVectors.Operations
 import HighSchoolMathLean.PlaneVectors.LinearAndDirection
+import HighSchoolMathLean.PlaneVectors.InnerProductAndBasis
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
