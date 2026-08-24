@@ -23,7 +23,7 @@ def IsZeroAngle (α : DirectedAngle) : Prop :=
   α.rotation = 0
 
 /-- The radian measure of a central angle is arc length divided by radius. -/
-def radianMeasure (arcLength radius : ℝ) : ℝ :=
+noncomputable def radianMeasure (arcLength radius : ℝ) : ℝ :=
   arcLength / radius
 
 /-- For a nonzero radius, arc length is radian measure times radius. -/
@@ -34,11 +34,11 @@ theorem arcLength_eq_radianMeasure_mul_radius (arcLength radius : ℝ)
   field_simp
 
 /-- The area of a sector with radian angle `α` and radius `r`. -/
-def sectorArea (α r : ℝ) : ℝ :=
+noncomputable def sectorArea (α r : ℝ) : ℝ :=
   (1 / 2 : ℝ) * α * r ^ 2
 
 /-- Convert an angle measured in degrees to radians. -/
-def degreesToRadians (θ : ℝ) : ℝ :=
+noncomputable def degreesToRadians (θ : ℝ) : ℝ :=
   Real.pi / 180 * θ
 
 /-- All real angles whose terminal side agrees with that of `α`. -/
