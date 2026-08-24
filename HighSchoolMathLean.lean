@@ -21,6 +21,7 @@ import HighSchoolMathLean.Trigonometry.ProductAndSubstitutionIdentities
 import HighSchoolMathLean.Trigonometry.HarmonicMotion
 import HighSchoolMathLean.PlaneVectors.Basic
 import HighSchoolMathLean.PlaneVectors.AdditionGeometry
+import HighSchoolMathLean.PlaneVectors.Operations
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
