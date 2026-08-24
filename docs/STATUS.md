@@ -21,7 +21,9 @@
 | Functions: logarithm properties and directed angles | 10 |
 | Trigonometry: angles, radians, and quadrant sets | 10 |
 | Trigonometry: sine, cosine, tangent, and periodicity | 10 |
-| **Total** | **142** |
+| Trigonometry: qualitative properties and extrema | 10 |
+| Trigonometry: angle addition, double-angle, and half-angle identities | 10 |
+| **Total** | **162** |
 
 ## Acceptance criteria
 
