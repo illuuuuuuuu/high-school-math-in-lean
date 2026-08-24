@@ -23,7 +23,9 @@
 | Trigonometry: sine, cosine, tangent, and periodicity | 10 |
 | Trigonometry: qualitative properties and extrema | 10 |
 | Trigonometry: angle addition, double-angle, and half-angle identities | 10 |
-| **Total** | **162** |
+| Trigonometry: product-to-sum and half-angle substitutions | 11 |
+| Trigonometry: graph transformations and harmonic motion | 9 |
+| **Total** | **182** |
 
 ## Acceptance criteria
 
