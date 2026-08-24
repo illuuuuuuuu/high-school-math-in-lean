@@ -19,7 +19,9 @@
 | Functions: fractional and real power laws | 10 |
 | Functions: exponential and logarithm foundations | 10 |
 | Functions: logarithm properties and directed angles | 10 |
-| **Total** | **122** |
+| Trigonometry: angles, radians, and quadrant sets | 10 |
+| Trigonometry: sine, cosine, tangent, and periodicity | 10 |
+| **Total** | **142** |
 
 ## Acceptance criteria
 
