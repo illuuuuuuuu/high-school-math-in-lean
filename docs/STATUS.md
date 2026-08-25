@@ -35,16 +35,18 @@
 | Complex numbers: foundations, geometry, and operations | 17 |
 | Complex numbers: polar form and operations | 7 |
 | Solid geometry: foundations and elementary solids | 13 |
-| **Total** | **282** |
+| Solid geometry: surface-area and volume formulas | 15 |
+| Solid geometry: planes and incidence | 5 |
+| **Total** | **302** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 317 |
-| New verified declarations in this repository | 282 |
+| Source statements processed | 337 |
+| New verified declarations in this repository | 302 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **317** |
+| **Total source coverage** | **337** |
 
 ## Acceptance criteria
 
