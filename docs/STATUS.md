@@ -31,16 +31,18 @@
 | Plane vectors: inner products, projections, and bases | 10 |
 | Plane vectors: coordinate formulas and criteria | 8 |
 | Sequences: basic concepts, types, and formulas | 12 |
-| **Total** | **242** |
+| Sequences: arithmetic progressions | 3 |
+| Complex numbers: foundations, geometry, and operations | 17 |
+| **Total** | **262** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 277 |
-| New verified declarations in this repository | 242 |
+| Source statements processed | 297 |
+| New verified declarations in this repository | 262 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **277** |
+| **Total source coverage** | **297** |
 
 ## Acceptance criteria
 
