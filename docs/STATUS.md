@@ -33,16 +33,18 @@
 | Sequences: basic concepts, types, and formulas | 12 |
 | Sequences: arithmetic progressions | 3 |
 | Complex numbers: foundations, geometry, and operations | 17 |
-| **Total** | **262** |
+| Complex numbers: polar form and operations | 7 |
+| Solid geometry: foundations and elementary solids | 13 |
+| **Total** | **282** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 297 |
-| New verified declarations in this repository | 262 |
+| Source statements processed | 317 |
+| New verified declarations in this repository | 282 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **297** |
+| **Total source coverage** | **317** |
 
 ## Acceptance criteria
 
