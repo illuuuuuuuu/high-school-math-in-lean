@@ -29,16 +29,18 @@
 | Plane vectors: algebraic operations and scalar multiplication | 10 |
 | Plane vectors: linear operations, direction, and angle | 10 |
 | Plane vectors: inner products, projections, and bases | 10 |
-| **Total** | **222** |
+| Plane vectors: coordinate formulas and criteria | 8 |
+| Sequences: basic concepts, types, and formulas | 12 |
+| **Total** | **242** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 257 |
-| New verified declarations in this repository | 222 |
+| Source statements processed | 277 |
+| New verified declarations in this repository | 242 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **257** |
+| **Total source coverage** | **277** |
 
 ## Acceptance criteria
 
