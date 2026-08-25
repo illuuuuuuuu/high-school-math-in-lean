@@ -27,6 +27,9 @@ import HighSchoolMathLean.PlaneVectors.InnerProductAndBasis
 import HighSchoolMathLean.PlaneVectors.Coordinates
 import HighSchoolMathLean.Sequences.Basic
 import HighSchoolMathLean.Sequences.TypesAndFormulas
+import HighSchoolMathLean.Sequences.ArithmeticProgressions
+import HighSchoolMathLean.ComplexNumbers.Basic
+import HighSchoolMathLean.ComplexNumbers.GeometryAndOperations
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
