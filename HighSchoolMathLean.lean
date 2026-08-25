@@ -33,6 +33,8 @@ import HighSchoolMathLean.ComplexNumbers.GeometryAndOperations
 import HighSchoolMathLean.ComplexNumbers.Trigonometric
 import HighSchoolMathLean.SolidGeometry.Foundations
 import HighSchoolMathLean.SolidGeometry.BasicSolids
+import HighSchoolMathLean.SolidGeometry.Measurements
+import HighSchoolMathLean.SolidGeometry.Incidence
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
