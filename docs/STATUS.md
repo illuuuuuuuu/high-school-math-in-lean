@@ -40,16 +40,18 @@
 | Solid geometry: line and plane relations | 20 |
 | Solid geometry: perpendicularity | 5 |
 | Statistics: foundations and descriptive measures | 15 |
-| **Total** | **342** |
+| Statistics: inference and estimation | 14 |
+| Probability: events, laws, and simulation | 17 |
+| **Total** | **373** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 377 |
-| New verified declarations in this repository | 342 |
+| Source statements processed | 408 |
+| New verified declarations in this repository | 373 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **377** |
+| **Total source coverage** | **408** |
 
 ## Acceptance criteria
 
