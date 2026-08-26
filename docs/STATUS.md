@@ -38,16 +38,18 @@
 | Solid geometry: surface-area and volume formulas | 15 |
 | Solid geometry: planes and incidence | 5 |
 | Solid geometry: line and plane relations | 20 |
-| **Total** | **322** |
+| Solid geometry: perpendicularity | 5 |
+| Statistics: foundations and descriptive measures | 15 |
+| **Total** | **342** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 357 |
-| New verified declarations in this repository | 322 |
+| Source statements processed | 377 |
+| New verified declarations in this repository | 342 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **357** |
+| **Total source coverage** | **377** |
 
 ## Acceptance criteria
 
