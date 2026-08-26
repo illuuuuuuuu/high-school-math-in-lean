@@ -37,16 +37,17 @@
 | Solid geometry: foundations and elementary solids | 13 |
 | Solid geometry: surface-area and volume formulas | 15 |
 | Solid geometry: planes and incidence | 5 |
-| **Total** | **302** |
+| Solid geometry: line and plane relations | 20 |
+| **Total** | **322** |
 
 ## Coverage summary
 
 | Coverage category | Statements |
 |---|---:|
-| Source statements processed | 337 |
-| New verified declarations in this repository | 302 |
+| Source statements processed | 357 |
+| New verified declarations in this repository | 322 |
 | Statements represented directly by Lean/Mathlib primitives | 35 |
-| **Total source coverage** | **337** |
+| **Total source coverage** | **357** |
 
 ## Acceptance criteria
 
