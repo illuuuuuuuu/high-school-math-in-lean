@@ -35,6 +35,7 @@ import HighSchoolMathLean.SolidGeometry.Foundations
 import HighSchoolMathLean.SolidGeometry.BasicSolids
 import HighSchoolMathLean.SolidGeometry.Measurements
 import HighSchoolMathLean.SolidGeometry.Incidence
+import HighSchoolMathLean.SolidGeometry.LineAndPlaneRelations
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
