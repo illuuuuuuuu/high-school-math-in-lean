@@ -39,6 +39,8 @@ import HighSchoolMathLean.SolidGeometry.LineAndPlaneRelations
 import HighSchoolMathLean.SolidGeometry.Perpendicularity
 import HighSchoolMathLean.Statistics.Foundations
 import HighSchoolMathLean.Statistics.Descriptive
+import HighSchoolMathLean.Statistics.Inference
+import HighSchoolMathLean.Probability.Basic
 import HighSchoolMathLean.Logic.Basic
 import HighSchoolMathLean.SetTheory.BasicRelations
 import HighSchoolMathLean.SetTheory.RelativeComplement
