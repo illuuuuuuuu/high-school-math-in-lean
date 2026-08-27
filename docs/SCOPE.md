@@ -1,6 +1,6 @@
 # Scope
 
-This project develops a verified Lean 4 library for elementary mathematics. Planned subject areas include:
+This project provides a verified Lean 4 library for elementary mathematics. The current library covers:
 
 - logic and set theory;
 - equations and inequalities;
@@ -14,6 +14,6 @@ This project develops a verified Lean 4 library for elementary mathematics. Plan
 - descriptive statistics;
 - elementary probability.
 
-The public library is organized by mathematical dependencies rather than by the chapter order of any particular publication.
+The library is organized by mathematical dependencies rather than by the chapter order of any particular publication.
 
 Definitions already available in Mathlib are reused whenever practical. A new definition is introduced only when it provides a clear mathematical or pedagogical benefit.
