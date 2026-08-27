@@ -16,7 +16,9 @@ Illusix Liu
 
 ## Current contents
 
-The library currently begins with foundational identities for sets. Additional modules will cover algebra, functions, trigonometry, vectors, sequences, complex numbers, geometry, statistics, and probability.
+The library currently contains 373 verified Lean declarations covering logic and set theory, algebra, functions, trigonometry, plane vectors, sequences, complex numbers, solid geometry, statistics, and probability.
+
+A further 35 foundational statements are represented directly by Lean or Mathlib primitives, giving a total coverage of 408 elementary mathematical statements.
 
 ## Build
 
